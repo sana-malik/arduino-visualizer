@@ -1,0 +1,61 @@
+/* Global */
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+	color: rgb(254, 178, 103);
+	margin: 0px;
+	padding: 0px;
+	background-color: rgb(245, 245, 245);
+	overflow: hidden;
+}
+
+.handle {
+	font-family: sans-serif;
+	font-size: 1.2em;
+}
+
+/* Vis */
+#vis {
+	z-index: -1;
+	width: 1500px;
+	position: absolute;
+	top: 0px; left: 0px;
+}
+
+pin-labels {
+	z-index: 10;
+	position: absolute;
+	top: 0px; left: 0px;
+}
+
+.pin-label {
+	font-size: 1.3em;
+	text-transform: uppercase;
+	padding-left: 5px;
+}
+
+.data-column {
+	float: left;
+}
+
+#time-label {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 10px; left: 720px;
+}
+
+.time-box {
+	font-size: 0.8em;
+	color: #333;
+	position: absolute;
+	top: 750px;
+}
+
+.data-box[class*=" I"] {
+	background-color: rgb(219, 28, 83);
+}
+
+.data-box[class*=" O"] {
+	background-color: rgb(14, 176, 178);
+}

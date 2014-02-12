@@ -1,0 +1,8 @@
+d3.ardVis = function() {
+	var vis = {},
+		data = []
+
+	//;
+
+	return vis;
+}
