@@ -1,4 +1,8 @@
-# Protocol
+# Serial Data Visualizer
+
+![Screenshot](http://i.imgur.com/LNCpErT.png)
+
+## Protocol
 All lines begin with <*** and end with ***>
 
 Data for the pin is sent in the format: [*MODE*][*PIN*][*~MAX*], where
@@ -8,14 +12,14 @@ Data for the pin is sent in the format: [*MODE*][*PIN*][*~MAX*], where
 
 Data for multiple pins can be sent in one line, separated by a pipe (|)
 
-# Visualization
+## Visualization
 Backend is made with NodeJS, Express, Socket.io, and SerialPort. Frontend is made with jQuery, d3, and Socket.io
 
 Each row is a pin. The last 60 seconds of data are shown, and then scrolled off the screen (time is on the x-axis and a timestamp is labeled for each column). Pink is for input and blue is for output. The opacity represents the average value of the pin for the last second (clear for 0, full color for *MAX*).
 
 Raw data from the serial is shown in the console of the server (in terminal)
 
-# To run
+## To run
 **Requirements** nodejs
 
 1. Set the correct port in line 7 of server.js
